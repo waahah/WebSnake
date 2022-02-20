@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>网页版贪吃蛇</title>
+  <link href="./snake.css" rel="stylesheet">
+</head>
+<body>
+    <h1>贪吃蛇</h1>
+    <div id="init-content">
+      <h2>
+        游戏设置
+      </h2>
+      <div class="input-content">
+        <label>障碍个数</label>
+        <input id="obstacle-num" placeholder="请输入1-10的数字" type="number" max="10" />
+      </div>
+      <div class="input-content">
+        <label>移动速度</label>
+        <input type="radio" name="speed" value="150" /><label>快</label>
+        <input type="radio" name="speed" value="300" checked /><label>中</label>
+        <input type="radio" name="speed" value="500" /><label>慢</label>
+      </div>
+      <button id="start-game-btn">开始游戏</button>
+    </div>
+    <!-- 扩展部分：游戏排行榜 -->
+    <div id="rank-container">
+      <p>游戏排行榜</p>
+      <ul id="rank-list"></ul>
+    </div>
+    <div id="score-container">
+      <span>当前分数:</span>
+      <span id="score">0</span>
+    </div>
+    <div id="introduce-container">
+      <div>
+        <span>(↑→↓←)</span>
+        <span>方向键移动</span>
+      </div>
+      <div>
+        <span class="introduce-snake-head"></span>
+        <span>小蛇</span>
+      </div>
+      <div>
+        <span class="introduce-food"></span>
+        <span>食物</span>
+      </div>
+      <div>
+        <span class="introduce-obstacle"></span>
+        <span>障碍物</span>
+      </div>
+    </div>
+    <!-- 移动界面容器 -->
+    <div id="container"></div>
+    <div id="game-over-container">
+      <p class="game-over-text">游戏结束</p>
+      <p>
+        <span>本次得分:</span>
+        <span id="total-score">0</span>
+      </p>
+      <button id="restart-btn">重新开始</button>
+      <button id="exit-btn">退出游戏</button>
+    </div>
+    <script src="./snake.js"></script>
+</body>
+</html>

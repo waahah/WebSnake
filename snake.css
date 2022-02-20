@@ -1,0 +1,217 @@
+#init-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 25px 50px;
+    border: 4px solid #ccc;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.input-content {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#start-game-btn {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 20px;
+    background-color: #00ccee;
+    border-width: 0;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+}
+
+#score-container {
+    display: none;
+    position: fixed;
+    top: calc(50% - 240px);
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-weight: bold;
+}
+
+#introduce-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: calc(50% + 250px);
+    transform: translate(0, -50%);
+    font-weight: bold;
+}
+
+#introduce-container div {
+    margin-top: 12px;
+}
+
+.introduce-snake-head {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    border-radius: 50%;
+    background-color: #ffa500;
+}
+
+.introduce-snake-head::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    margin-top: -4px;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 6px solid #fff;
+}
+
+.introduce-food {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-top: 4px;
+    margin-left: 4px;
+    vertical-align: middle;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.introduce-obstacle {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 2px;
+    vertical-align: middle;
+    background-color: burlywood;
+}
+
+#container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid rosybrown;
+    overflow: hidden;
+}
+
+.snake {
+    position: absolute;
+}
+
+.snake-item {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    margin: 2px;
+    border-radius: 50%;
+    background-color: rgb(150, 51, 26);
+}
+
+.snake-item:first-child{
+    background-color: #ffa500;
+}
+
+.snake-item:first-child::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    margin-top: -4px;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 6px solid #fff;
+}
+
+.obstacle {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    margin: 2px;
+    background-color: burlywood;
+}
+
+.food {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    margin-top: 4px;
+    margin-left: 4px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+#game-over-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 100;
+    background-color: rgba(0,0,0,0.7);
+}
+
+#game-over-container p {
+    font-size: 28px;
+    color: #fff;
+}
+
+.game-over-text {
+    margin-top: 80px;
+}
+
+#restart-btn {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 20px;
+    background-color: #ffa500;
+    border-width: 0;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+}
+
+#exit-btn {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: #fff;
+    border-width: 0;
+    border-radius: 5px;
+    color: #000;
+    text-align: center;
+}
+
+
+/* 扩展：游戏排行榜 */
+#rank-container {
+    position: fixed;
+    top: 50%;
+    right: calc(50% + 250px);
+    width: 300px;
+    transform: translate(0, -50%);
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: 3px solid #ffa500;
+    font-weight: bold;
+}
+
+#rank-container p {
+    text-align: center;
+    color: crimson;
+    font-size: 28px;
+}
