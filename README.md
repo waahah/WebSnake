@@ -1,6 +1,6 @@
 # JsSnake
 
->[在线体验demo](https://waahah.xyz/JsSnake/)
+>[在线体验demo](https://waahah.github.io/JsSnake/)
 未做移动端适配，建议使用电脑端浏览效果更好
 
 #### 介绍
