@@ -1,11 +1,11 @@
 # JsSnake
 
->[在线体验demo](https://waahah.github.io/JsSnake/)
+>[在线体验demo](https://waahah.github.io/WebSnake/)
 未做移动端适配，建议使用电脑端浏览效果更好
 
 #### 介绍
 
-Using JS web page version snake
+Build a web version of Snake using Javascript
 
 #### 软件架构
 软件架构说明
